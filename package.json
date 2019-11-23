@@ -1,0 +1,24 @@
+{
+  "name": "synix",
+  "version": "0.1.0",
+  "description": "demo des",
+  "main": "synix.js",
+  "scripts": {
+    "test": "node synix.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemanth-hk/synix.git"
+  },
+  "keywords": [
+    "cli",
+    "synix",
+    "node"
+  ],
+  "author": "me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hemanth-hk/synix/issues"
+  },
+  "homepage": "https://github.com/hemanth-hk/synix#readme"
+}
