@@ -1,11 +1,13 @@
 {
   "name": "synix",
   "version": "0.1.0",
-  "description": "demo des",
-  "main": "synix.js",
-  "scripts": {
-    "test": "node synix.js"
+  "description": "A command line interface in Node.js to make Unix and some other commands available for Windows, Linux and OS X",
+  "main": "sx.js",
+  "preferGlobal": true,
+  "bin": {
+    "sx": "sx.js"
   },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hemanth-hk/synix.git"
@@ -15,7 +17,7 @@
     "synix",
     "node"
   ],
-  "author": "me",
+  "author": "Hemanth Kumar and Kunal Katiyar",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hemanth-hk/synix/issues"
