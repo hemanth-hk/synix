@@ -1,0 +1,12 @@
+{ 
+    "Globals": [
+    	{"Desktop" : "None"},
+    	{"Downloads" : "None"},
+    	{"Documents" : "None"}
+    ],
+    "Text-editor" : [
+    	{"name" : "None"},
+    	{"folder-command" : "None"},
+    	{"file-command" : "None"}
+    ]
+}
