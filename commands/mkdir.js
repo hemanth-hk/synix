@@ -2,18 +2,18 @@
 const fs=require('fs');
 
 //function making the directory
-function mkdir(path,FolderName){
+function mkdir(path,FolderName = "New"){
     var new_path=path.concat(FolderName);
-    try{
+
         fs.mkdir(new_path,(err) =>{
             if(err){
-                throw err;
+                console.log("Folder with this name already exists.");
+            }else{
+                console.log(`Folder ${new_path} created`);
             }
         });
-    }
-    catch{
-        console.log("Folder with this name already exists.");
-    }
+
+
 }
 
 //exporting the mkdir function
