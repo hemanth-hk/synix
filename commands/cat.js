@@ -10,7 +10,9 @@ function cat(path,FileName){
                 console.log("File does not exist with this name");
             }else{
                 console.log(`${FileName} has the following contents:`);
+                console.log('\n');
                 console.log(data);
+                console.log('\n');
             }
         });
 
