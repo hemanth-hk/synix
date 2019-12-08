@@ -7,6 +7,7 @@ var pwd = require("./commands/pwd");
 var open = require("./commands/open");
 var mkdir = require("./commands/mkdir");
 var cat = require("./commands/cat");
+var rm = require("./commands/rm");
 
 // argument parsing
 passedArgs = process.argv.slice(2);
@@ -24,7 +25,8 @@ if (passedArgs.length == 0) {
   mkdir("./",passedArgs[1]);
 } else if (passedArgs.length >= 1 && passedArgs[0] == "cat") {
   cat("./",passedArgs[1]);
-}
-  else {
+} else if (passedArgs.length >= 1 && passedArgs[0] == "rm") {
+  rm("./",passedArgs[1]);
+} else {
   console.error(`Argument(s) ${passedArgs} cannot be parsed`);
 }
