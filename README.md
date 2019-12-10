@@ -1,5 +1,5 @@
-#SYNIX
-###A command line interface in Node.js to make Unix and some other commands available for Windows, Linux and OS X
+# SYNIX
+### A command line interface in Node.js to make Unix and some other commands available for Windows, Linux and OS X
 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/hemanth-hk/synix) &nbsp;&nbsp;
 ![GitHub issues](https://img.shields.io/github/issues/hemanth-hk/synix) &nbsp;&nbsp;
