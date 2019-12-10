@@ -1,6 +1,6 @@
 {
   "name": "synix",
-  "version": "0.1.0",
+  "version": "0.8.1",
   "description": "A command line interface in Node.js to make Unix and some other commands available for Windows, Linux and OS X",
   "main": "sx.js",
   "preferGlobal": true,

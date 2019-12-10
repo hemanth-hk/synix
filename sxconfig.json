@@ -8,5 +8,8 @@
     	{"name" : "None"},
     	{"folder-command" : "None"},
     	{"file-command" : "None"}
+    ],
+    "Custom" : [
+        {}
     ]
 }

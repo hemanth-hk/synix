@@ -1,13 +1,11 @@
 #!/usr/bin/env node
 
-// command imports form ./command
-var init = require("./commands/init");
-var ls = require("./commands/ls");
-var pwd = require("./commands/pwd");
-var open = require("./commands/open");
-var mkdir = require("./commands/mkdir");
-var cat = require("./commands/cat");
-var rm = require("./commands/rm");
+// command imports form ./commands/cmds.js
+var {
+	init,ls,pwd,open,mkdir,cat,rm
+	
+} = require('./commands/cmds.js')
+
 
 // argument parsing
 passedArgs = process.argv.slice(2);
