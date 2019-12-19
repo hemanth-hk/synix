@@ -2,10 +2,15 @@
 
 // command imports form ./commands/cmds.js
 var {
-	init,ls,pwd,open,mkdir,cat,rm
-	
-} = require('./commands/cmds.js')
-
+  init,
+  ls,
+  pwd,
+  open,
+  mkdir,
+  cat,
+  rm,
+  mkpro
+} = require("./commands/cmds.js");
 
 // argument parsing
 passedArgs = process.argv.slice(2);
@@ -20,11 +25,13 @@ if (passedArgs.length == 0) {
 } else if (passedArgs.length == 1 && passedArgs[0] == "init") {
   init();
 } else if (passedArgs.length >= 1 && passedArgs[0] == "mkdir") {
-  mkdir("./",passedArgs[1]);
+  mkdir("./", passedArgs[1]);
 } else if (passedArgs.length >= 1 && passedArgs[0] == "cat") {
-  cat("./",passedArgs[1]);
+  cat("./", passedArgs[1]);
 } else if (passedArgs.length >= 1 && passedArgs[0] == "rm") {
-  rm("./",passedArgs[1]);
+  rm("./", passedArgs[1]);
+} else if (passedArgs.length >= 1 && passedArgs[0] == "mkpro") {
+  mkpro(passedArgs[1]);
 } else {
   console.error(`Argument(s) ${passedArgs} cannot be parsed`);
 }
