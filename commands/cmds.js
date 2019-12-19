@@ -8,7 +8,8 @@ module.exports = {
 	open : require("./open"),
 	mkdir : require("./mkdir"),
 	cat : require("./cat"),
-	rm : require("./rm")
+	rm : require("./rm"),
+	mv: require("./mv")
 
 }
 

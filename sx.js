@@ -2,7 +2,7 @@
 
 // command imports form ./commands/cmds.js
 var {
-	init,ls,pwd,open,mkdir,cat,rm
+	init,ls,pwd,open,mkdir,cat,rm,mv
 	
 } = require('./commands/cmds.js')
 
@@ -25,6 +25,8 @@ if (passedArgs.length == 0) {
   cat("./",passedArgs[1]);
 } else if (passedArgs.length >= 1 && passedArgs[0] == "rm") {
   rm("./",passedArgs[1]);
+} else if (passedArgs.length >= 1 && passedArgs[0] == "mv") {
+  mv(passedArgs[1],passedArgs[2]);
 } else {
   console.error(`Argument(s) ${passedArgs} cannot be parsed`);
 }

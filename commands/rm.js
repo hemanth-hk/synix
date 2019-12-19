@@ -22,18 +22,28 @@ function rm(path,FileName){
             });
         });
     }
+    else if(!(FileName.includes('.'))){
+        var new_path=path.concat(FileName);
+        fs.rmdir(new_path,{ recursive: true },(err) =>{
+            if(err){
+                console.log("Folder does not exist with this name");
+            }
+            else{
+                console.log(`${FileName} has been deleted`);
+            }
+        });
+    }
     //else the particular filename is deleted
     else{
         var new_path=path.concat(FileName);
-
-            fs.unlink(new_path,(err) =>{
-                if(err){
-                    console.log("File does not exist with this name");
-                }
-                else{
-                    console.log(`${FileName} has been deleted`);
-                }
-            });
+        fs.unlink(new_path,(err) =>{
+            if(err){
+                console.log("File does not exist with this name");
+            }
+            else{
+                console.log(`${FileName} has been deleted`);
+            }
+        });
     }
 
 }
