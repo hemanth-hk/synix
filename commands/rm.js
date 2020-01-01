@@ -48,8 +48,5 @@ function rm(path,FileName){
 
 }
 
-//folder deletion yet to be implemented
-
-
 //exporting the rm function
 module.exports = rm;

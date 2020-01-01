@@ -6,7 +6,7 @@ const fs = require('fs');
 function ls(path){
     fs.readdir(path,(err,files) =>{
         files.forEach(file => {
-            console.log(`|- ${file}`)
+            console.log(`${file}`)
         });
     });
 }

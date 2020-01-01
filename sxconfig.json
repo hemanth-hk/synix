@@ -1,15 +1,24 @@
-{ 
-    "Globals": [
-    	{"Desktop" : "None"},
-    	{"Downloads" : "None"},
-    	{"Documents" : "None"}
-    ],
-    "Text-editor" : [
-    	{"name" : "None"},
-    	{"folder-command" : "None"},
-    	{"file-command" : "None"}
-    ],
-    "Custom" : [
-        {}
-    ]
+{
+ "Globals": [
+  {
+   "des": "/home/hemanth/Desktop"
+  },
+  {
+   "dow": "/home/hemanth/Downloads"
+  },
+  {
+   "doc": "/home/hemanth/Documents"
+  }
+ ],
+ "Text_editor": [
+  {
+   "editor_name": "Sublime Text"
+  },
+  {
+   "command": "subl"
+  }
+ ],
+ "Custom": [
+  {}
+ ]
 }
