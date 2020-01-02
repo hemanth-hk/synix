@@ -3,12 +3,12 @@ const path = require("path");
 const exec = require("child_process").exec;
 
 // imports
-var filePath = path.join(__dirname, "..", "sxconfig.json");
-var sxconfig = require(filePath);
+var filePath = path.join(__dirname, "..");
+var sxconfig = require(path.join(__dirname, "..","sxconfig.json"));
 
 
 function edit() {
-  exec(`${sxconfig.Text_editor[1]['command']} ${filePath}`, error => {
+  exec(`cd ${filePath} && ${sxconfig.Text_editor[1]['command']} sxconfig.json`, error => {
     if (error) {
       console.error(`exec error: ${error}`);
       return;
