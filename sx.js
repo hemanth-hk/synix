@@ -28,6 +28,7 @@ sxconfig.Custom.forEach(obj => {
 passedArgs = process.argv.slice(2);
 if (passedArgs.length == 2 && passedArgs[0].toLowerCase() == "init") {
   init(passedArgs[1].toLowerCase());
+  process.exit(0);
 } 
 
 // Check if SYNIX is initialized
