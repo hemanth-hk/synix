@@ -1,21 +1,21 @@
 {
  "Globals": [
   {
-   "des": "/home/hemanth/Desktop"
+   "des": "None"
   },
   {
-   "dow": "/home/hemanth/Downloads"
+   "dow": "None"
   },
   {
-   "doc": "/home/hemanth/Documents"
+   "doc": "None"
   }
  ],
  "Text_editor": [
   {
-   "editor_name": "Sublime Text"
+   "editor_name": "None"
   },
   {
-   "command": "subl"
+   "command": "None"
   }
  ],
  "Custom": [
