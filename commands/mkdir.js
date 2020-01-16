@@ -9,7 +9,7 @@ function mkdir(path,FolderName = "New"){
             if(err){
                 console.log("Folder with this name already exists.");
             }else{
-                console.log(`Folder ${new_path} created`);
+                console.log(`Folder ${FolderName} created`);
             }
         });
 

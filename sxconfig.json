@@ -1,21 +1,21 @@
 {
  "Globals": [
   {
-   "des": "None"
+   "des": "C:\\Users\\Kunal\\Desktop"
   },
   {
-   "dow": "None"
+   "dow": "C:\\Users\\Kunal\\Downloads"
   },
   {
-   "doc": "None"
+   "doc": "C:\\Users\\Kunal\\Documents"
   }
  ],
  "Text_editor": [
   {
-   "editor_name": "None"
+   "editor_name": "Visual Studio Code"
   },
   {
-   "command": "None"
+   "command": "code"
   }
  ],
  "Custom": [
