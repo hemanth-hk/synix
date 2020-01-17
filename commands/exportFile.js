@@ -12,5 +12,7 @@ module.exports = {
   mkpro: require("./mkpro"),
   sxglobal: require("./sxglobal"),
   sxcustom: require("./sxcustom"),
-  edit: require("./edit")
+  edit: require("./edit"),
+  touch: require("./touch"),
+  cp: require("./cp")
 };

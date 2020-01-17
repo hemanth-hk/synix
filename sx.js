@@ -5,7 +5,7 @@ const path = require("path");
 const process = require('process');
 
 // command imports form ./commands/exportFile.js
-var { init ,ls, pwd, open, mkdir, cat, rm, mkpro, mv, sxglobal, sxcustom, edit
+var { init ,ls, pwd, open, mkdir, cat, rm, mkpro, mv, sxglobal, sxcustom, edit, touch, cp
 } = require("./commands/exportFile.js");
 
 // Config File
@@ -72,6 +72,11 @@ if (passedArgs.length == 0) {
   sxcustom(custKeys.indexOf(passedArgs[0].toLowerCase()),passedArgs[0].toLowerCase())
 }else if(passedArgs.length == 1 && passedArgs[0].toLowerCase() == "edit"){
   edit();
-} else {
+}else if (passedArgs.length >= 1 && passedArgs[0].toLowerCase() == "touch") {
+  touch("./", passedArgs[1]);
+}else if (passedArgs.length >= 1 && passedArgs[0].toLowerCase() == "cp") {
+  cp(passedArgs[1],passedArgs[2]);
+}
+else {
   console.error(`Argument(s) ${passedArgs} cannot be parsed`);
 }
