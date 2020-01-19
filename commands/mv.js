@@ -1,19 +1,19 @@
 //importing filesystem
-const fs=require('fs');
+const fs = require('fs');
 
 //function movinf the file
-function mv(old_path,new_path){
-    source='./'
-    var old_path_wrt=source.concat(old_path);
-    var new_path_wrt=source.concat(new_path);
+function mv(old_path, new_path) {
+    source = './'
+    var old_path_wrt = source.concat(old_path);
+    var new_path_wrt = source.concat(new_path);
 
-        fs.rename(old_path_wrt,new_path_wrt,(err) =>{
-            if(err){
-                console.log("Invalid path");
-            }else{
-                console.log("File moved");
-            }
-        });
+    fs.rename(old_path_wrt, new_path_wrt, (err) => {
+        if (err) {
+            console.log("Invalid path");
+        } else {
+            console.log("File moved");
+        }
+    });
 
 
 }

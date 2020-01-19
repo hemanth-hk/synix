@@ -1,8 +1,7 @@
-[
-  {
-    "editor_name": "Sublime Text"
-  },
-  {
-    "command": "subl"
-  }
+[{
+        "editor_name": "Sublime Text"
+    },
+    {
+        "command": "subl"
+    }
 ]

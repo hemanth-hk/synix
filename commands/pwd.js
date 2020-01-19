@@ -1,4 +1,4 @@
-function pwd(){
+function pwd() {
     console.log(`Path : ${process.cwd()}`);
 }
 
