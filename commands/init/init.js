@@ -11,6 +11,7 @@ function init(editorAlias) {
     // Text Editor json
     var sublJSON = require(path.join(__dirname, "subl.json"));
     var codeJSON = require(path.join(__dirname, "code.json"));
+    var atomJSON = require(path.join(__dirname, "atom.json"));
 
     // Get Data
     let data = fs.readFileSync(filePath);
@@ -31,6 +32,8 @@ function init(editorAlias) {
         sxconfig.Text_editor = sublJSON;
     } else if (editorAlias == "code") {
         sxconfig.Text_editor = codeJSON;
+    } else if (editorAlias == "atom") {
+        sxconfig.Text_editor = atomJSON;
     } else {
         console.log(`${editorAlias} is not supported`)
         console.log("SYNIX is not initialized")
