@@ -3,7 +3,7 @@ const { spawn } = require("child_process");
 
 function clone(urls) {
     if (!urls[0]) {
-        console.log("Url not given")
+        console.log("url not given")
         return
     }
     let cmd;
@@ -11,20 +11,17 @@ function clone(urls) {
     if (urls[1]) {
         if (urls[2]) {
             cmd = `git clone ${urls[0]} && cd ${folderName} && git remote add ${urls[2]} ${urls[1]}`
-            console.log("Done")
         } else {
             cmd = `git clone ${urls[0]} && cd ${folderName} && git remote add upstream ${urls[1]}`
-            console.log("Done")
         }
     } else {
         cmd = `git clone ${urls[0]}`
-        console.log("Done")
     }
 
     let command = spawn(cmd, [], { shell: true });
 
-    command.stdout.on("data", data => {
-        console.log(`${data}`);
+    command.stderr.on("data", data => {
+        console.log(`${data}`)
     });
 }
 

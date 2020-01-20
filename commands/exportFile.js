@@ -15,5 +15,6 @@ module.exports = {
     edit: require("./edit"),
     touch: require("./touch"),
     cp: require("./cp"),
-    clone: require("./misc/clone")
+    clone: require("./misc/clone"),
+    sync: require("./misc/sync")
 };
