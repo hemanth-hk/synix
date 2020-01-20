@@ -20,7 +20,8 @@ var {
     edit,
     touch,
     cp,
-    clone
+    clone,
+    sync
 } = require("./commands/exportFile.js");
 
 // Config File
@@ -93,6 +94,8 @@ if (passedArgs.length == 0) {
     cp(passedArgs[1], passedArgs[2]);
 } else if (passedArgs.length >= 1 && passedArgs[0].toLowerCase() == "clone") {
     clone(passedArgs.slice(1))
+} else if (passedArgs.length >= 1 && passedArgs[0].toLowerCase() == "sync") {
+    sync(passedArgs.slice(1));
 } else {
     console.error(`Argument(s) ${passedArgs} cannot be parsed`);
 }
