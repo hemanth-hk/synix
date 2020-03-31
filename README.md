@@ -5,5 +5,4 @@
 ![GitHub issues](https://img.shields.io/github/issues/hemanth-hk/synix) &nbsp;&nbsp;
 ![KWoC 2019](https://img.shields.io/badge/KWoC-2019-informational)
 
-## Contributers
-Firstly try to solve the issues and make some `prs` and to try any new command create a seperate branch and test it and then create a new pull req.
+## Important: Synix is moved to [https://github.com/synixjs/synix](https://github.com/synixjs/synix)
